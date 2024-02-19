@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+nav{
+    justify-content: center;
+    border: solid;
+    border-radius: 3px;
+    border-color: aliceblue;
+    background-color: gray;
+    width: 99vw;
+    height: 10vh;
+    text-decoration: none;
+}
+nav ol{
+    text-align: center;
+}
+nav li{
+    margin-right: 100px;
+    margin-left: 100px;
+    display: inline;
+    color: white;
+    
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+}
+.nigga1{
+    width: 99vh;
+    height: 10vh;
+    font-size: x-large;
+    
+}
+.west{
+    width: 1080px;
+    height: 25vh;
+}
+
+h1{
+    margin-left: 25px;
+}

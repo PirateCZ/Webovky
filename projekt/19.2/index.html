@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Bootstrap lib/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body id="body" class="text">
+
+    <div class="text fluid-container" >
+        <div class="row">
+            <div class="col">
+                <span class="text "><h2 id="text">This text can be changed.</h2></span>
+            </div>
+        </div>
+        <div class=" d-flex justify-content-center">
+            <div class="p-2">
+                <button onclick="changeBackground()" id="button-background" class="btn btn-primary">Change background</button>
+            </div>
+            <div class="p-2">
+                <button onclick="motivationMsg()" id="button-alert" class="btn btn-success">Show Me motivation</button> 
+            </div>
+            <div class="p-2">
+                <button onclick="askForInput()" id="button-text" class="btn btn-warning">Change Text</button> 
+            </div>
+
+        </div>      
+    </div>
+
+
+    <script src="/Bootstrap lib/js/bootstrap.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

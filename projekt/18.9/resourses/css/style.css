@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: crimson;
+    color:  antiquewhite;
+}
+nav{
+    width: 100vw;
+    height: 50vh;
+    background-color: antiquewhite;
+    color:crimson   ;
+}
+.navbar ul{
+    list-style-type: none;
+    text-align: center;
+    font-size: larger;
+}
+.navbar li{
+    font-size: larger;
+    display: inline;
+    color: crimson;
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
+.header{
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+    text-decoration: none;
+}
+a{
+    color: antiquewhite;
+    text-decoration: none;
+}

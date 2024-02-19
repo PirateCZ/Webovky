@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav.center{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+li.li{
+    display: inline;
+    margin: 10px;
+}
+ul{
+    padding-bottom: 10px;
+}
+h1{
+    font-size: xx-large;
+    padding: 10px 20px 10px 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+button.button{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    left: 45%;
+    right: 45%;
+    width: fit-content;
+}
+button.button:hover{
+    scale: 1.1;
+}
+div.about{
+    margin: 25px 0px 25px 10px;
+}
+h3.projects{
+    margin:0px 0px 10px 10px;
+}
+h4{
+    margin: 10px;
+    padding: 10px 25px 10px 25px;
+}
+span{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+}
+div.contacts{
+    margin: 10px;
+}
+div p{
+    margin: 5px 0px 5px 10px;
+}
+div.div{
+    background-color: lightgrey;
+    margin: 25px;
+    border-radius: 25px;
+    width: auto;
+}

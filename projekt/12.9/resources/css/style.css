@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+
+.a {
+    width: 192px;
+    height: 1080px;
+}
+
+.b {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: large;
+}
