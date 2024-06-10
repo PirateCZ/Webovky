@@ -1,0 +1,16 @@
+*{        
+color: aliceblue;
+}
+body {
+    background-color: black;
+}
+h1{
+    font-size: large;
+}
+.a {
+    width: 250px;    
+}    
+.b {
+    width: 200px;
+    height: 200px;
+}       
