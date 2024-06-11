@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.new-div{
+    background-color: blue;
+    min-width: 100px;
+    min-height: 100px;
+}
+.button{
+    display: block;
+}
+*{
+    margin: 10px;
+}
