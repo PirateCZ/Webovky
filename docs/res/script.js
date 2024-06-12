@@ -8,8 +8,9 @@ let fileList = []
 //github api
 const user = "PirateCZ"
 const repo = "Webovky"
-const defaultDirectory = "project"
-const url = `https://api.github.com/repos/${user}/${repo}/git/trees/refined?recursive=1`
+const defaultDirectory = ""
+const branch = "main"
+const url = `https://api.github.com/repos/${user}/${repo}/git/trees/${branch}?recursive=1`
 
 //start the circus
 loadData()
