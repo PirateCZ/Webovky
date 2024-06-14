@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.extrafries</title>
+    <link rel="stylesheet" href="/Bootstrap lib/css/bootstrap.css">
+</head>
+<body>
+    <style>
+        *{
+            margin: 10px;
+        }
+    </style>
+    <main class="container input-group">
+        <label for="">Number 1</label>
+        <input type="number" class="input-group" id="num1">
+        <label for="">Number 2</label>
+        <input type="number" class="input-group" id="num2">
+        <h2 class="output">Here this for the output</h2>
+        <button class="btn btn-primary" onclick="putItTogether()">=</button>
+    </main>
+    <script src="/Bootstrap lib/js/bootstrap.js"></script>
+    <script>
+
+        let input1 = document.getElementById("num1");
+        let input2 = document.getElementById("num2");
+        let output = document.querySelector(".output")
+        function putItTogether(){
+            let num1 = parseInt(input1.value)
+            let num2 = parseInt(input2.value)
+            let numOutput = num1 + num2
+            output.innerHTML = "Result: "
+            output.innerHTML += numOutput 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+ul{
+    list-style: none;
+    display:flex inline;
+    gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 250px;
+}
+.container{
+    text-align: center;
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+#button-letters{
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+}
+#button-letters > button{
+    font-size: larger;
+    margin: 10px;
+    background-color: whitesmoke;
+    border: none;
+    padding: 0px 15px;
+    border-radius: 10px;
+    height: 75px;
+    width: 7 5px;
+}

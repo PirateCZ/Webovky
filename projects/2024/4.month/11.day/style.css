@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: blue;
+    width: 100vw;
+    height: 20vh;
+    top: 0;
+    position: sticky;
+}
+.span{
+    background-color: green;
+    width: 20vw;
+    height: 100vh;
+}

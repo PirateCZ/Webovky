@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodiny</title>
+</head>
+<body>
+    <main style="display: block;">
+        <div style="margin-top: 20%;">
+            <h1 id="0" style="text-align: center;">HH:MM:SS</h1>
+        </div>
+    </main>
+    <script>
+        const clock = document.getElementById(0)
+        setInterval(() => {
+            const date = new Date()    
+            let sec = date.getSeconds()
+            let min = date.getMinutes()
+            let hour = date.getHours()
+            let time = `${addZeros(hour.toString())}:${addZeros(min.toString())}:${addZeros(sec.toString())}`
+            clock.innerHTML = time
+        }, 500)
+        function addZeros(oldTime){
+            let newTime = "0"
+            if(oldTime.length == 1){
+                newTime += oldTime
+            }
+            else{
+                newTime = oldTime
+            }
+            return newTime
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.center{
+    text-align: center;
+}
+.border{
+    border-bottom: 1px whitesmoke solid;
+}
+.grid{
+    grid-template-columns: 33vw  33vw 1fr;
+    display: grid;
+}
+.nadpis{
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+}
+.jmeno{
+    padding: 20px 0px 20px 0px;
+}
+.skills{
+    margin: 10px 20px 10px 20px;
+}
+.projects{
+    margin: 0px 20px 10px 20px;
+}
+.backgorund{
+    margin: 0px 20px 10px 20px;
+}
+.text{
+    margin: 40px;
+}
+img.git{
+    margin: 0 auto;
+    width: 256px;
+    height: auto;;
+}
+table.link{
+    border-spacing: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+td{
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    margin: 5px;
+}
+td.instagram{
+    margin: 5px;
+    background: linear-gradient(to right,#7B0BFE, #FE0979, #FF9802);
+}
+td.x{
+    margin: 5px;
+    background: black;
+    border: 1px white solid;
+}
+td.github{
+    background: #F05033;
+}
+td.linkedin{
+    background-color: blue;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+img.img{
+    width: 256px;
+    height: 256px;
+}
+div.project{
+    margin: 20px;
+}
+footer.foot{
+    margin: auto;
+    width: 50%;
+}
+p.p{
+    margin: 20px 0px 10px 0px;
+}
+.input{
+    margin: 10px 20px 10px 20px   ;
+}
+.flex{
+    display: flex;
+}
+@media only screen and (max-width: 600px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 300px;
+    }
+    img.git{
+        margin: 0 auto;
+        width: 50vw;
+        height: auto;
+    }    
+    table.link{
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+    }
+    div.project{
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+    .flex{
+        display: block;
+    }
+    }
+@media only screen and (min-width:601px) and (max-width: 900px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+    img.git{
+        margin: 0 auto;
+        width: 50vw;
+        height: auto;
+    }    
+    table.link{
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+    }
+    div.project{
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+    .flex{
+        display: block;
+    }
+    }

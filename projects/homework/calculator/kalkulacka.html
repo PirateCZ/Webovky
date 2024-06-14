@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="container" style="margin: 10px; padding: 5px;">    
+        <div class="row">
+            <div class="col">
+                <input id="prvniCislo" type="number" class="form-control">
+            </div>
+            <div class="col">
+                <select id="znamenko" class="form-select-sm">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                </select>
+            </div>
+            <div class="col">
+                <input id="druhyCislo" type="number" class="form-control">
+            </div>
+            <div class="col">
+                <p>=</p>
+            </div>
+            <dic class="col" style="border: lightgray 1px solid; border-radius: 7px; text-align: center;">
+                <p style="padding-top: 3px;" id="vysledek">vysledek</p>
+            </dic>
+            <div class="col">
+                <button class="btn btn-primary" onclick="vypocti()">Vypocitej</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        const input1 = document.getElementById("prvniCislo")
+        const input2 = document.getElementById("druhyCislo")
+        const znamenkoInput = document.getElementById("znamenko")
+        const output = document.getElementById("vysledek") 
+        function vypocti(){
+            let cislo1 = input1.value
+            let cislo2 = input2.value
+            let znamenko = znamenkoInput.value
+            let vysledek = NaN
+            if(znamenko == '+'){
+                vysledek = parseFloat(cislo1) + parseFloat(cislo2)
+            }
+            else if(znamenko == '-'){
+                vysledek = parseFloat(cislo1) - parseFloat(cislo2)
+            }
+            else if(znamenko == '*'){
+                vysledek = parseFloat(cislo1) * parseFloat(cislo2)
+            }
+            else if(znamenko == '/'){
+                vysledek = parseFloat(cislo1) / parseFloat(cislo2)
+            }
+            else(console.log('bro'))
+            console.log(vysledek)
+            output.innerHTML = vysledek
+        }
+    </script>
+</body>
+</html>

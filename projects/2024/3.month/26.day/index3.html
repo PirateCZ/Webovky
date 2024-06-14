@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.extrafries</title>
+    <link rel="stylesheet" href="/Bootstrap lib/css/bootstrap.css">
+</head>
+<body>
+    <style>
+        #dynamic-element{
+            text-align: center;
+            width: 500px;
+            height: 500px;
+            border: 2px black solid;
+            margin: 10px;
+        }
+    </style>
+    <div id="dynamic-element">This div wil change color</div>
+    <button class="btn btn-primary" onclick="changeColor()">Change color</button>
+    <script src="/Bootstrap lib/js/bootstrap.js"></script>
+    <script>
+        let dynamicElement = document.getElementById("dynamic-element");
+        function changeColor(){
+            if (dynamicElement.style.backgroundColor == "blue"){
+                dynamicElement.style.backgroundColor = "white"
+            }else{
+                dynamicElement.style.backgroundColor = "blue"
+            }
+        }
+    </script>
+</body>
+</html>

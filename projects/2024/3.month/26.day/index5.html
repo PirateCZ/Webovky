@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.extrafries</title>
+    <link rel="stylesheet" href="/Bootstrap lib/css/bootstrap.css">
+</head>
+<body>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+    </style>
+    <main class="container">
+        <button class="btn btn-primary" onclick="intervalId = setInterval(updateTimer, 1000); time = 10; timer.innerHTML = time;">
+            START
+        </button>
+    </main>
+    <script src="/Bootstrap lib/js/bootstrap.js"></script>
+    <script>
+        let body = document.querySelector("body")
+        let timer = document.createElement("h1")
+        let intervalId
+        timer.style.textAlign = "center"
+        body.appendChild(timer);
+        let time = 10 
+        function updateTimer(){
+            if (time <= 0){
+                alert("Time ran out")
+                clearInterval(intervalId)
+            } 
+            else{
+                time--
+                timer.innerHTML = time
+            }
+        }
+    </script>
+</body>
+</html>

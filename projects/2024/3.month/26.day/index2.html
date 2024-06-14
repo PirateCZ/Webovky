@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.extrafries</title>¨
+    <link rel="stylesheet" href="/Bootstrap lib/css/bootstrap.css">
+</head>
+<body>
+    <style>
+
+    </style>
+    <main class="container">
+        <label for="" class="info">Add a word</label>
+        <input type="text" class="input">
+        <button class="btn btn-primary" onclick="addString()">
+            Press
+        </button>
+    </main>
+    <script src="/Bootstrap lib/js/bootstrap.js"></script>
+    <script>
+        let stringField = [];
+        let infoBox = document.querySelector(".info");
+        let input = document.querySelector(".input")
+        function addString(){
+            let inputWord = input.value
+            stringField += inputWord 
+            console.log(inputWord);
+            input.value = " "
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.row{
+    display: flex;
+    justify-content: center;
+}
+main{
+    text-align: center;
+    margin-top: 30vh;
+}

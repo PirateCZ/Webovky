@@ -36,6 +36,7 @@ function addFiles(){
             fileList.push(new file(fileName, '../' + data.tree[i].path))
         }
     }
+    fileList.push(new file('homework', '../projects/homework/index.html'))
     fileList.sort((a, b) => {
         let dateA = new Date(a.fileName.split('/').join('-'));
         let dateB = new Date(b.fileName.split('/').join('-'));

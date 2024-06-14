@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.extrafries</title>
+    <link rel="stylesheet" href="/Bootstrap lib/css/bootstrap.css">
+</head>
+<body>
+    <main class="container">
+            <div class="mb-3">
+                <label for="" class="label">Email address</label>
+                <input type="text" class="form-control" id="inputEmail">
+                <button class="btn btn btn-primary" onclick="checkEmailCorrect()">Confirm Email</button>
+                <h4 class="info-box"></h3>
+              </div>
+    </main>
+    <script src="/Bootstrap lib/js/bootstrap.js"></script>
+    <script>
+        let inputEmail = document.getElementById("inputEmail")
+        let infoBox = document.querySelector(".info-box")
+        function checkEmailCorrect(){
+            console.log("Hello World!")
+            let email = inputEmail.value
+            if (email.includes("@")){
+                infoBox.innerHTML = "Your email has been confirmed"
+            }
+            else{
+                infoBox.innerHTML = "Email must conatain a \"@\""
+            }
+        }
+
+    </script>
+</body>
+</html>

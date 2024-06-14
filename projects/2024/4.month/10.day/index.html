@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{background-color: black;}
+        </style>
+    
+    <script>
+        class Book{
+            constructor(bookName, bookAuthor, realeseYear, idBook){
+                this.bookName = bookName;
+                this.bookAuthor = bookAuthor;
+                this.realeseYear = realeseYear;
+                this.idBook = idBook;
+            }
+        }
+        class User{
+            constructor(name, listOfBorrowBook, idUser){
+                this.name = name;
+                this.listOfBorrowBook = listOfBorrowBook;
+                this.idUser = idUser;
+            }
+        }
+        class MakeBorrow{
+            constructor(idBookBorrow, idUserBorrow, dateOfReturn){
+                this.idBookBorrow = idBookBorrow;
+                this.idUserBorrow = idUserBorrow;
+                this.dateOfReturn = dateOfReturn;
+            }
+        }
+
+        idBookCounter = 1;
+        idUserCounter = 1;
+        let data = {
+            bookList:[
+
+            ],
+            userList:[
+
+            ],
+            borrowList:[
+
+            ]
+        }
+
+        function addBook(name,author,year){
+            let id = "";
+            id += idBookCounter;
+            idBookCounter++;
+            while(id.length < 4){
+                id = "0" + id;
+            }
+            data.bookList.push(new Book(name,author,year,id));
+        }
+
+        function registerUser(name){
+            let id = "";
+            id += idUserCounter;
+            idUserCounter++;
+            while(id.length < 4){
+                id = "0" + id;
+            }
+            data.userList.push(new User(name,[],id));
+        }
+
+        //i should add it to the user too but thats gonna need more for loops till  i figure out a way
+        function borrowBook(userId, bookId){
+            if(data.userList.length <= 0 || data.bookList.length <= 0){
+                console.log("there are no books or user")
+                return 
+            }
+            let date = new Date(new Date().getTime()+(7*24*60*60*1000))
+            for(let i = 0; i < data.userList.length; i++){
+                if(userId == data.userList[i].idUser){
+                    console.log("user has been found")
+                    break
+                }
+                else{
+                    console.log("couldnt find user")
+                    return
+                }
+            }
+            for(let i = 0; i < data.bookList.length ;i++){
+                if(bookId == data.bookList[i].idBook){
+                    for(let j = 0; j < data.borrowList.length; j++){
+                        if(bookId == data.borrowList[j].idBookBorrow){
+                            console.log("book is allready borrowed")
+                            return
+                        }
+                    }
+
+                    data.borrowList.push(new MakeBorrow(bookId,userId,date))
+                    console.log("book has been borrowed")
+                    return
+                }
+            }
+            console.log("couldnt find book")
+        }
+        function returnBook(userId, bookId){
+            for(let i = 0;  i < data.bookList.length; i++){
+                if(bookId == data.borrowList[i].idBookBorrow && userId == data.borrowList[i].idUserBorrow){
+                    data.borrowList.splice(i,1)
+                    console.log("book has been returned")
+                    return
+                }
+            }
+            console.log("couldnt find book or user")
+            return
+        }
+
+    </script>
+</body>
+</html>
