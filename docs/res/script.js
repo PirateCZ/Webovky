@@ -43,7 +43,7 @@ function addFiles(){
         let dateB = new Date(b.fileName.split('/').join('-'));
         return dateA - dateB;
     });
-    fileList.push(new file('homework', '../projects/homework/index.html'))
+    fileList.push(new file('homework', '../projects/homework/'))
     showAllFiles()
 }   
 
