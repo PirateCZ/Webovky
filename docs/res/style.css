@@ -8,6 +8,8 @@ body{
 .header{
     height: 120px;
     background-color: #0D1129;
+    color: #E0E1DD;
+    text-align: center;
 }
 .container{
     gap: 10px;
