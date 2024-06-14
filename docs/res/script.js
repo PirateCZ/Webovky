@@ -25,6 +25,7 @@ async function loadData(){
         let response = await fetch(url)
         data = await response.json()
     }catch(error){console.error(error)}
+    console.log(data)
     addFiles()
 }
 
@@ -34,14 +35,15 @@ function addFiles(){
         if(data.tree[i].path.startsWith(defaultDirectory) && data.tree[i].path.endsWith('.day')){
             let fileName = createFileName(data.tree[i].path)
             fileList.push(new file(fileName, '../' + data.tree[i].path))
+            console.log("File added: ", fileName, '../' + data.tree[i].path)
         }
     }
-    fileList.push(new file('homework', '../projects/homework/index.html'))
     fileList.sort((a, b) => {
         let dateA = new Date(a.fileName.split('/').join('-'));
         let dateB = new Date(b.fileName.split('/').join('-'));
         return dateA - dateB;
     });
+    fileList.push(new file('homework', '../projects/homework/index.html'))
     showAllFiles()
 }   
 
