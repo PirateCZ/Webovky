@@ -52,7 +52,7 @@ function showAllFiles(){
     for(let i = 0; i < fileList.length; i++){
         let button = document.createElement('button')
         button.innerHTML = `${fileList[i].fileName}`
-        button.classList.add('file')
+        button.classList.add('button-file')
         button.onclick = () => {location.href = `${fileList[i].filePath}`}
         main.appendChild(button)
     }

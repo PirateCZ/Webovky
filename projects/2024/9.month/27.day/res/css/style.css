@@ -1,0 +1,33 @@
+:root{
+    --tea-rose-red: #eeb4b3ff;
+    --sky-magenta: #c179b9ff;
+    --veronica: #a42cd6ff;
+    --tekhelet: #502274ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display: flex;
+    align-items: start;
+}
+.link{
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+}
+.box{
+    margin: 10px;
+    padding: 3px 25px;
+    border-radius: 50% 0 ;
+    background-color: #cfd8dc;
+}
+.nav{
+    margin: 15px;
+    border-bottom: 2px black solid;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
