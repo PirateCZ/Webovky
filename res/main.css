@@ -1,3 +1,7 @@
+main{
+    margin: 0;
+    padding: 0 2.6rem;
+}
 .intro{
     display: flex;
     flex-direction: column;
@@ -6,12 +10,15 @@
     height: clamp(10vh, 70vh, 100vh);
 }
 .intro > .one{
+    color: var(--text);
     font-size: x-large;
 }
 .intro > .two{
+    color: var(--primary);
     font-size: xx-large;
 }
 .intro > .three .four{
+    color: var(--text);
     font-size: smaller;
     text-wrap: wrap;
 }
@@ -21,6 +28,82 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    padding-bottom: 10rem   ;
 
-    height: clamp(10vh, 70vh, 100vh);
+    height: clamp(10vh, 66vh, 100vh);
+}
+.aboutme-box{
+    margin: 0.5rem;
+    padding: 1.6rem 2.6rem;
+
+    border-radius: 0.6rem;
+    background: linear-gradient(-45deg, var(--primary) 0%, var(--accent) 100%);
+
+    width: clamp(100px, 580px, 580px);
+    height: clamp(fit-content, );
+}
+.aboutme-text{
+    color: var(--text-dark);
+    font-size: medium;
+    line-height: 1.6rem;
+    text-wrap: wrap;
+    margin: 0;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10rem;
+
+    color: var(--text-dark);
+}
+.quote-box{
+    margin: 0.5rem;
+    padding: 1.6rem 2.6rem;
+    
+    border-radius: 0.6rem;
+    background: linear-gradient(45deg, var(--primary) 0%, var(--accent) 100%);
+
+    width: clamp(100px, 680px, 680px);
+    height: clamp(fit-content);
+
+    line-height: 1.6rem;
+    text-wrap: wrap;
+}
+
+.socials{
+    height: clamp(10vh, fit-content, 100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.socials-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.socials-icons > .icon{
+    color: var(--primary);
+    font-size: xxx-large;
+}
+
+.footer{
+    border-top: 2px solid var(--secondary);
+    
+    text-align: center;
+    
+    min-height: fit-content;
+    margin: 0 20px;
+
+}
+
+#git{
+    font-size: 1.6rem;
+    color: var(--accent);
 }

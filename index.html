@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">   
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./res/style.css">
@@ -26,15 +26,14 @@
         </div>
         <div class="navbar-right">
             <a href="#aboutme"><h6 class="link">About</h6></a>
+            <a href="#socials"><h6 class="link">Socials</h6></a>
             <a href="./projects.html"><h6 class="link">Projects</h6></a>
-            <a href="#"><h6 class="link">Sample Text</h6></a>
-            <a href="#"><h6 class="link">Sample Text</h6></a>
-            <a href="#"><h6 class="link">Sample Text</h6></a>
+            <a href="https://github.com/PirateCZ"><i class="fa-brands fa-github" id="git"></i></a>
         </div>
     </nav>
 
     <!--MAIN-->
-    <main class="container flex">
+    <main class="main flex">
         
         <!--INTRO-->
         <div class="row">
@@ -52,24 +51,66 @@
                     Right now, I'm studying at <a href="https://spsul.cz" class="link">Resslova 5</a> in Ústí nad Labem
                 </p>
             </div>
-            <div class="col"></div>
+            <div class="col">
+
+            </div>
         </div>
         <div class="gradient"></div>
         
         <!--ABOUTME-->
-        <div class="row">
+        <div class="row" id="aboutme">
+            <div class="col quote">
+                <div class="quote-box"> 
+                    <p style="text-align: left;" id="quote">"Code is like humor. When you have to explain it, it's bad."</p>
+                    <p style="text-align: right;" id="quote-author">-someone probably 1999</p>
+                </div>
+            </div>
             <div class="col aboutme">
                 <h3>About Me</h3>
-                <p>Hi this is me i like this</p>
+                <div class="aboutme-box">
+                    <p class="aboutme-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit nostrum dolores cupiditate nihil nobis deleniti quasi dolorum, laborum, ducimus atque. Eveniet nam corrupti ullam cumque, maiores obcaecati consectetur voluptatibus.</p>
+
+                </div>
             </div>
         </div>
         <div class="gradient"></div>
 
+        <!--SOCIALS-->
+        <div class="row" id="socials">
+            <div class="col socials">
+                <h5>If you wanna  reach out here you can</h5>
+                <div class="socials-icons">
+
+                    <!--Github-->
+                    <a href="https://github.com/PirateCZ" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https:www.instagram.com/schod._.filip/" target="_blank" class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <!-- Email -->
+                    <a href="mailto://fschod1245@gmail.com" class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!--Twitter
+                    <a href="https://x.com/PirateCZ159786" target="_blank" class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    -->
+                    <!-- LinkedIn
+                    <a href="https://linkedin.com" target="_blank" class="icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    -->
+                </div>
+            </div>
+        </div>
     </main>
 
     <!--FOOTER-->
-    <footer>
-        this will be normal footer
+    <footer class="footer">
+        © 2024 PirateCZ All rights reserved.    
     </footer>
 </body>
 </html>
