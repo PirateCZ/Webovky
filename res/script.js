@@ -1,5 +1,5 @@
 //main container
-let main = document.getElementById('main')
+let main = document.getElementById('file-container')
 
 //housing for all the files
 let data = {}
