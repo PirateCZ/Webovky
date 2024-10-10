@@ -30,7 +30,7 @@ main{
     align-items: flex-end;
     padding-bottom: 10rem   ;
 
-    height: clamp(10vh, 66vh, 100vh);
+    height: clamp(10vh, 70vh, 100vh);
 }
 .aboutme-box{
     margin: 0.5rem;
@@ -40,7 +40,7 @@ main{
     background: linear-gradient(-45deg, var(--primary) 0%, var(--accent) 100%);
 
     width: clamp(100px, 580px, 580px);
-    height: clamp(fit-content, );
+    height: clamp(fit-content);
 }
 .aboutme-text{
     color: var(--text-dark);
