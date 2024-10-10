@@ -1,3 +1,26 @@
-.body{
-    margin: auto;
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: clamp(10vh, 70vh, 100vh);
+}
+.intro > .one{
+    font-size: x-large;
+}
+.intro > .two{
+    font-size: xx-large;
+}
+.intro > .three .four{
+    font-size: smaller;
+    text-wrap: wrap;
+}
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: clamp(10vh, 70vh, 100vh);
 }

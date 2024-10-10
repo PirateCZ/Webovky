@@ -17,3 +17,14 @@ body{
     background-color: var(--background);
     font-family: var(--font-family);
 }
+.gradient {
+    height: 2px;
+
+    background: var(--background);
+    background: linear-gradient(
+      90deg,
+      var(--primary) 0%,
+      var(--secondary) 50%,
+      var(--accent) 100%
+    );
+}

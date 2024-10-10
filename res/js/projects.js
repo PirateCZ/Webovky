@@ -39,10 +39,10 @@ function addFiles(){
         }
     }
     fileList.sort((a, b) => {
-        let dateA = new Date(a.fileName.split('/').join('-'));
-        let dateB = new Date(b.fileName.split('/').join('-'));
-        return dateA - dateB;
-    });
+        let dateA = new Date(a.fileName.split('/').join('-'))
+        let dateB = new Date(b.fileName.split('/').join('-'))
+        return dateA - dateB
+    })
     fileList.push(new file('homework', './projects/homework/'))
     showAllFiles()
 }   
