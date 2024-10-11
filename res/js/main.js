@@ -1,10 +1,16 @@
 let quoteText = document.getElementById('quote')
-let quoteAuthorText = document.getElementById('quote-author')
-const apiURL = ''
-let response;
-try{
+let quoteTextAuthor = document.getElementById('quote-author')
+const apiURL = 'https://programming-quotesapi.vercel.app/api/random'
+randomQuote()
+
+async function randomQuote() {
     fetch(apiURL)
-}catch(e){
-    console.error(e);   
+    .then(response => response.json())
+    .then(quote => {
+        // Assigning the quote text and author to respective HTML elements
+        quoteText.innerHTML = quote.quote;
+        quoteTextAuthor.innerHTML = `- ${quote.author}`;
+    })
+    .catch(e => console.error(e));
+
 }
-console.log(apiURL);
