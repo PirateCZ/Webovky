@@ -23,14 +23,21 @@ main{
     text-wrap: wrap;
 }
 
+.aboutme-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    height: fit-content;
+
+}
 .aboutme{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 10rem   ;
+    justify-content: space-evenly;
+    align-items: flex-start;
 
-    height: clamp(10vh, 70vh, 100vh);
+    padding: 1.6rem 0;
 }
 .aboutme-box{
     margin: 0.5rem;
@@ -39,8 +46,7 @@ main{
     border-radius: 0.6rem;
     background: linear-gradient(-45deg, var(--primary) 0%, var(--accent) 100%);
 
-    width: clamp(100px, 580px, 580px);
-    height: clamp(fit-content);
+    width: clamp(100px, 580px, 70vw);
 }
 .aboutme-text{
     color: var(--text-dark);
@@ -52,12 +58,12 @@ main{
 
 .quote{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 10rem;
-
+    align-items: center;
     color: var(--text-dark);
+
+    padding: 1.6rem 0;
 }
 .quote-box{
     margin: 0.5rem;
@@ -66,7 +72,7 @@ main{
     border-radius: 0.6rem;
     background: linear-gradient(45deg, var(--primary) 0%, var(--accent) 100%);
 
-    width: clamp(100px, 680px, 680px);
+    width: clamp(100px, 680px, 70vw);
     height: clamp(fit-content);
 
     line-height: 1.6rem;
@@ -106,4 +112,23 @@ main{
 #git{
     font-size: 1.6rem;
     color: var(--accent);
+}
+
+@media (max-width: 1080px){
+    .aboutme-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .aboutme{
+        height: clamp(10vh, fit-content, 100vh);
+
+    }
+}
+@media (min-width: 1081px){
+    .aboutme{
+        height: clamp(10vh, 70vh, 100vh);
+
+    }
 }
