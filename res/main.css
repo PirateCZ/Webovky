@@ -46,7 +46,7 @@ main{
     border-radius: 0.6rem;
     background: linear-gradient(-45deg, var(--primary) 0%, var(--accent) 100%);
 
-    width: clamp(100px, 580px, 70vw);
+    width: clamp(100px, 40vw, 70vw);
 }
 .aboutme-text{
     color: var(--text-dark);
@@ -72,7 +72,7 @@ main{
     border-radius: 0.6rem;
     background: linear-gradient(45deg, var(--primary) 0%, var(--accent) 100%);
 
-    width: clamp(100px, 680px, 70vw);
+    width: clamp(100px, 40vw, 70vw);
     height: clamp(fit-content);
 
     line-height: 1.6rem;
@@ -112,6 +112,9 @@ main{
 #git{
     font-size: 1.6rem;
     color: var(--accent);
+}
+#git:hover{
+    color: var(--primary);
 }
 
 @media (max-width: 1080px){
