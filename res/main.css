@@ -1,4 +1,4 @@
-main{
+.main{
     margin: 0;
     padding: 0 2.6rem;
 }
@@ -55,6 +55,10 @@ main{
     text-wrap: wrap;
     margin: 0;
 }
+.highlight{
+    color: #ffffff;
+    font-style: italic;
+}
 
 .quote{
     display: flex;
@@ -78,6 +82,13 @@ main{
     line-height: 1.6rem;
     text-wrap: wrap;
 }
+.quote-text{
+    color: var(--text-dark);
+    font-size: medium;
+    line-height: 1.6rem;
+    text-wrap: wrap;
+    margin: 0;
+}
 
 .socials{
     height: clamp(10vh, fit-content, 100vh);
@@ -99,15 +110,7 @@ main{
     font-size: xxx-large;
 }
 
-.footer{
-    border-top: 2px solid var(--secondary);
-    
-    text-align: center;
-    
-    min-height: fit-content;
-    margin: 0 20px;
 
-}
 
 #git{
     font-size: 1.6rem;

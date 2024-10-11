@@ -20,7 +20,7 @@
 <body>
     <!--NAVBAR-->
     <nav class="navbar">
-        <div class="navbar-left">
+        <div class="navbar-left" id="surprise">
             <h1 class="my-name">Filip Schod</h1>
         </div>
         <div class="navbar-right">
@@ -32,7 +32,7 @@
     </nav>
 
     <!--MAIN-->
-    <main class="main flex">
+    <main class="main">
         
         <!--have to fix issues with bootstrap-->
         <!--INTRO-->
@@ -63,7 +63,7 @@
                 <div>
                     <h3 style="color: var(--text);">About Me</h3>
                     <div class="aboutme-box">
-                        <p class="aboutme-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit nostrum dolores cupiditate nihil nobis deleniti quasi dolorum, laborum, ducimus atque. Eveniet nam corrupti ullam cumque, maiores obcaecati consectetur voluptatibus.</p>
+                        <p class="aboutme-text">Hi I'm <span class="highlight">Filip</span> an aspiring programmer from <span class="highlight">Czech Republic</span>. I go to a school in Ústí nad Labem. I study IT at <a href="https://spsul.cz" class="highlight">Resslova 5</a>. I like programming, mountain biking and playing video games. </p>
                     </div>
                 </div>
                 <div></div>
@@ -73,8 +73,10 @@
                 <div>
                     <h3 style="color: var(--text);">Random Quote</h3>
                     <div class="quote-box"> 
-                        <p style="text-align: left;" id="quote">"Code is like humor. When you have to explain it, it's bad."</p>
-                        <p style="text-align: right;" id="quote-author">-someone probably 1999</p>
+                        <div class="quote-text">
+                            <p style="text-align: left;" id="quote">"Code is like humor. When you have to explain it, it's bad."</p>
+                            <p style="text-align: right;" id="quote-author">-someone probably 1999</p>
+                        </div>
                     </div>
                 </div>
             </div>

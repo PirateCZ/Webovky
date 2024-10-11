@@ -1,3 +1,2 @@
-this is a sorted repository to view all my projects from school
-
-https://piratecz.github.io/Webovky/
+Here is my Personal Website:
+- https://piratecz.github.io/Webovky/

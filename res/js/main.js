@@ -7,10 +7,21 @@ async function randomQuote() {
     fetch(apiURL)
     .then(response => response.json())
     .then(quote => {
-        // Assigning the quote text and author to respective HTML elements
-        quoteText.innerHTML = quote.quote;
-        quoteTextAuthor.innerHTML = `- ${quote.author}`;
+        quoteText.innerHTML = quote.quote
+        quoteTextAuthor.innerHTML = `- ${quote.author}`
     })
-    .catch(e => console.error(e));
+    .catch(e => console.error(e))
 
 }
+
+
+
+let surprise = document.getElementById('surprise')
+let surpriseCounter = 0;
+surprise.addEventListener('click', () => {
+    surpriseCounter++
+    
+    if(surpriseCounter === 3){
+        alert('Hello World!');
+    }
+})

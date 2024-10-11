@@ -10,12 +10,12 @@
     --font-family: "Roboto Mono", monospace;
 }
 *{
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
 }
 body{
     background-color: var(--background);
-    font-family: var(--font-family);
 }
 .gradient {
     height: 2px;
@@ -27,4 +27,13 @@ body{
       var(--secondary) 50%,
       var(--accent) 100%
     );
+}
+
+.footer{
+    border-top: 2px solid var(--secondary);
+    
+    text-align: center;
+    
+    min-height: fit-content;
+    margin: 0 20px;
 }
