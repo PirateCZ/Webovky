@@ -13,6 +13,21 @@ for($i = 0; $i < 10; $i++){
     }
     else echo "error";
     echo "<br>";
-    echo "nemam slov typek nas proste uci podle w3schools";
+}
+echo "nemam slov typek nas proste uci podle w3schools";
+
+$i = 0;
+
+echo "<br>";
+do {
+  echo $i;
+  $i++;
+} while ($i < 6);
+
+echo "<br>";
+$i = 0;
+while ($i < 6) {
+  echo $i;
+  $i++;
 }
 ?>
