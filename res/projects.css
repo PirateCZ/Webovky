@@ -3,23 +3,33 @@
     padding: 0 2.6rem;
 }
 
-
 /* gta radio project */
 .gta-radio{
     min-height: 50vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.img-project{
+    padding: 1.6rem;
+    height: 350px;
+}
+.flex-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
-
-
-
-
-
-
-
 /* sorted repo project */
+.sorted-repo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.6rem;
+}
 .file-container{
     display: flex;
     justify-content: center;
@@ -32,7 +42,7 @@
 .button-file{
     text-align: center;
     
-    width: 120px;
+    width: 100px;
     height: 60px;
     padding: 10px;
 
@@ -42,4 +52,18 @@
     background-color: var(--primary);
     color: var(--text-dark);
     text-decoration: none;
+}
+@media (max-width: 400px){
+    .file-container{
+        padding: 1.6rem 0;
+    }
+}
+
+@media (max-width: 1024px){
+    .flex-project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

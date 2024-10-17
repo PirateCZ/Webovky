@@ -113,9 +113,10 @@
     color: var(--primary);
 }
 
+/* small screnn */
 @media (max-width: 1080px){
     .intro{
-        padding: 12.6rem 0;
+        padding: 10.6rem 0;
         height: clamp(10vh, fit-content, 100vh);
     }
     .aboutme-section{
@@ -129,6 +130,7 @@
 
     }
 }
+/* big screnn */
 @media (min-width: 1081px){
     .intro{
         height: clamp(10vh, 70vh, 100vh);
