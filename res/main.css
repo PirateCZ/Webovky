@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
 
-    height: clamp(10dvh, 70dvh, 100dvh);
+    height: clamp(10vh, fit-content, 100vh);
 }
 .intro > .one{
     color: var(--text);
