@@ -4,27 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+        <div class="container d-flex justify-content-start">
+            <a href="#" class="navbar-brand">My project</a>
+        </div>
         <div class="container">
-            <a href="#" class="navbar-brand">Frontend</a>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse d-flex justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item ms-auto">
-                        <a href="#learn" class="nav-link">Was ist das?</a>
+                        <a href="#" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#learn" class="nav-link">Was ist das?</a>
+                        <a href="#" class="nav-link">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#learn" class="nav-link">Was ist das?</a>
+                        <a href="#" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="container mt-5">
+        <div class="container">
+            <h1 class="text-start fs-1 fw-normal font-monospace">Welcome to our website</h1>
+            <p class="font-monospace text-wrap" style="max-width:90rem ;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, modi, ipsa, eius odio perspiciatis quasi consequatur nesciunt omnis quo provident aspernatur vel qui cupiditate? Fugiat nam facere iure autem ex.</p>
+        </div>
+        <div class="container"></div>
+        <div class="container"></div>
+
+
+        <main>      
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item bg-body-secondary">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show bg-dark-subtle" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-body-secondary">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-body-secondary">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="alert alert-primary" role="alert">
+                See here <a href="#" class="alert-link">Link</a>
+              </div>
+              <div class="alert alert-success">
+                success
+              </div>
+        </main>
+
+        <main class="main">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <textarea class="form-control" id="textarea" rows="3">
+    
+                  </textarea>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <form action="#" method="post" class="mt-5">
+                <label for="inputPassword5" class="form-label">Password</label>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="passwordHelpBlock" class="form-text">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </div>
+            </form>
+    
+            <form action="#" method="post" class="mt-5">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Password</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            Must be 8-20 characters long.
+                        </span>
+                    </div>
+                </div>
+            </form>
+    
+            <form action="#" class="mt-5">
+                <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+                <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+                <input type="text" value="this is readonly" class="form-control " aria-label="readonly input example" readonly>
+            </form>
+            </main>
+    
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Link</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        <nav>
+            <div class="alert alert-danger" role="alert">
+                <h2>
+                    Look how many people are registering!
+                    <span class="badge bg-danger">420</span>
+                </h2>
+              </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="" class="d-block w-100" alt="photo1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="" class="d-block w-100" alt="photo2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="" class="d-block w-100" alt="photo3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p class="text-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid minus praesentium consequatur ut, magni repellendus, nisi expedita veritatis doloremque numquam deserunt, suscipit voluptatum pariatur ullam illum ea ad accusamus eligendi?
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <form action="">    
+                        <div class="mb-3">
+                            <label for="" class="form-label">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email address</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Age</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select age</option>
+                                <option value="1">1-18</option>
+                                <option value="2">18-69</option>
+                                <option value="3">69-99</option>
+                              </select>
+                        </div>
+                        <div class="m-3">
+                            <button class="btn btn-primary" type="submit">
+                                Confirm
+                            </button>
+                        </div>
+                    </form>
+                    <div>
+                        <div class="m-1 d-inline-flex">
+                            <button class="btn btn-info">
+                                Info
+                            </button>        
+                        </div>
+                        <div class="m-1 d-inline-flex">
+                            <button class="btn btn-success">
+                                Check out our social media
+                            </button>
+                        </div>
+                        <div class="m-1 d-inline-flex">
+                            <button class="btn btn-danger">
+                                You have a virus 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+            </div>
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html> 

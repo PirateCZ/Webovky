@@ -1,16 +1,7 @@
-body{
-    color: black;
-    background-color: gray;
-}
 table{
-    border: 3px solid #1e82db;
-    background-color: #2e9bfa ;
+    border: 3px solid black;
     margin:0 auto ;
     border-radius: 5px;
     padding: 20px 20px 20px 20px;
     margin-top: 50px;
-}
-.input{
-    background-color: lightblue;
-
 }

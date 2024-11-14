@@ -1,9 +1,0 @@
-.sub{
-    background-color: red;
-    color: white;
-    border-style: none;
-    border-radius: 50px;
-}
-.sub:hover{
-    opacity: 0.5;
-}
