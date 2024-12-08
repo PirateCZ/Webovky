@@ -105,13 +105,6 @@
     font-size: xxx-large;
 }
 
-#git{
-    font-size: 1.6rem;
-    color: var(--accent);
-}
-#git:hover{
-    color: var(--primary);
-}
 
 /* small screnn */
 @media (max-width: 1080px){

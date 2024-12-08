@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/creator.css">
+    <link rel="stylesheet" href="../../../res/navbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>To-Do List</title>
+</head>
+<body>
+    <!--NAV-->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="navbar-right">
+            <a href="../../../projects.html"><h4 class="link">Projects</h4></a>
+            <a href="https://github.com/PirateCZ"><i class="fa-brands fa-github" id="git"></i></a>
+        </div>
+
+    </nav>
+    <!--MAIN-->
+    <main class="main">
+        <div class="container">
+            <div class="task-container">
+                <div class="todo">
+                    <div></div> <!--DONT REMOVE-->
+                    <div class="sort" onclick="sortBy(this);"><strong>Task</strong></div>
+                    <div class="sort" onclick="sortBy(this);"><strong>Priority</strong></div>
+                    <div class="sort" onclick="sortBy(this);"><strong>Deadline</strong></div>
+                </div>
+            </div>
+            <div class="task-container" id="taskContainer">
+                
+            </div><br>
+            <button onclick="toggleHidden();" class="btn pointer">Create Task</button>
+        </div>
+    </main>
+    <!--HIDDEN TASK CREATOR-->
+    <div class="blur hidden" id="hidden">
+        <div class="cross pointer" onclick="toggleHidden();">
+            <div class="left-cross"></div>
+            <div class="right-cross"></div>
+        </div>
+
+        <div class="task-creator">
+            <div style="display: flex; flex-direction: column; justify-content: flex-start; ">
+                <label for="nameInput">Task</label>
+                <input class="input" type="text" name="nameInput" id="nameInput" required autocomplete="off" placeholder="Task...">
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: flex-start; ">
+                <label for="deadlineInput">Deadline</label>
+                <input class="input" type="date" name="deadlineInput" id="deadlineInput" required placeholder="Date...">
+            </div>    
+
+            <div style="display: flex; flex-direction: column; justify-content: flex-start; ">
+                <label for="priorityInput">Priority</label>
+
+                <select class="input" name="priorityInput" id="priorityInput" required>
+                    <option value="" selected disabled hidden>Priority...</option>
+                    <option class="option" value="Low" style="background-color: blue;">Low</option>
+                    <option class="option" value="Normal" style="background-color: green;">Normal</option>
+                    <option class="option" value="High" style="background-color: red;">High</option>
+                </select>
+            </div>
+            <button class="btn pointer" type="submit" onclick="createTask();">Create Task</button>
+        </div>
+    </div>
+    <script src="./js/task.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

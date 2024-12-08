@@ -42,6 +42,7 @@
 
     padding: 2.6rem;
     gap: 10px;
+    text-wrap: nowrap;
 }
 .button-file{
     text-align: center;

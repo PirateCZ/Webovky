@@ -31,6 +31,7 @@ async function loadData(){
 
 //adds all the files to the
 function addFiles(){
+    fileList.push(new file('To-Do List', './projects/container/todolist'))
     for(let i = 0; i < data.tree.length; i++){
         if(data.tree[i].path.startsWith(defaultDirectory) && data.tree[i].path.endsWith('.day')){
             let fileName = createFileName(data.tree[i].path)
@@ -43,7 +44,7 @@ function addFiles(){
         let dateB = new Date(b.fileName.split('/').join('-'))
         return dateA - dateB
     })
-    fileList.push(new file('homework', './projects/homework/'))
+    fileList.push(new file('Homework', './projects/homework/'))
     showAllFiles()
 }   
 

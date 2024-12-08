@@ -31,6 +31,16 @@
 .link:hover{
     color: var(--primary);
 }
-.my-name{
+.text{
     color: var(--text);
+}
+.my-name{
+    cursor: crosshair;
+}
+#git{
+    font-size: 1.6rem;
+    color: var(--accent);
+}
+#git:hover{
+    color: var(--primary);
 }

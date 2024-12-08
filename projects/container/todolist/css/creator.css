@@ -1,0 +1,88 @@
+.blur{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-creator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+
+    background-color: var(--primary);
+    padding: 25px;
+
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+}
+
+.input{
+    padding: 5px;
+    border-radius: 5px;
+    border: var(--primary) 1px solid;
+    color: var(--text);
+}
+
+.option{
+    color: white;
+}
+.area{
+    min-width: 200px;
+    min-height: 100px;
+}
+
+.cross{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    height: 5vh;
+    width: 5vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-cross{
+    height: 0.2rem;
+    width: 1.6rem;
+    background-color: white;
+    transform: rotate(45deg) ;
+
+}
+
+.right-cross{
+    height: 0.2rem;
+    width: 1.6rem;
+    background-color: white;
+    transform: rotate(-45deg);
+
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (orientation: portrait){
+    .task-creator{
+        aspect-ratio: 9 / 16;
+    }
+}

@@ -14,14 +14,12 @@ async function randomQuote() {
 
 }
 
-
-
 let surprise = document.getElementById('surprise')
 let surpriseCounter = 0;
 surprise.addEventListener('click', () => {
     surpriseCounter++
     
     if(surpriseCounter === 3){
-        alert('Hello World!');
+        alert('Hello World!\nYou found it<3');
     }
 })
