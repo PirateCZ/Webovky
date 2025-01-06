@@ -21,10 +21,6 @@
     flex-direction: column;
     gap: 25px;
 
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
-
     background-color: var(--primary);
     padding: 25px;
 

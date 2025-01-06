@@ -1,0 +1,21 @@
+*{
+    margin: 5px;
+}
+input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+main{
+    padding: 25px;
+    display: flex;
+    justify-content: center ;
+}
+div{
+    padding: 25px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center ;
+
+}
