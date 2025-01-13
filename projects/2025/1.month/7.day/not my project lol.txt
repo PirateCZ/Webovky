@@ -1,0 +1,2 @@
+a === b
+this checks if value and type of a and b are the same
